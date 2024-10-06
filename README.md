@@ -6,21 +6,15 @@
 </div>
 
 <br/>
+This repository contains the code and data for our <a href="https://arxiv.org/pdf/2408.14649" target="_blank">paper on emergent language</a> in complex, situated multi-agent systems. While traditional research on language emergence has largely relied on reference games with simple interactions, our work explores how communication develops in more sophisticated, open-ended environments where agents interact over multiple time steps.
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
-- [About The Project](#about-the-project)
 - [Getting Started](#getting-started)
   - [Installation](#installation)
 - [Usage](#usage)
 - [Environment and Reward](#environment-and-reward)
 - [Environments](#environments)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## About The Project
-
-This repository contains the code and data for our study on emergent language in complex, situated multi-agent systems. While traditional research on language emergence has largely relied on reference games with simple interactions, our work explores how communication develops in more sophisticated, open-ended environments where agents interact over multiple time steps.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -37,7 +31,7 @@ To execute my experiments, the environment and my reinforcmenet learning code ha
    ```
 2. Check whether the installation was successful
    ```sh
-   python -c "import languageOpenEnd"
+   python -c "import OpenEndedLanguage"
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -48,8 +42,8 @@ To execute my experiments, the environment and my reinforcmenet learning code ha
 The basic multi agent pong environment can be imported and trained like this:<br/><br/>
 
 ```python
-from Continuous_Language.Environments.Multi_Pong.multi_pong import PongEnv
-from Continuous_Language.Reinforcement_Learning.Centralized_PPO.multi_ppo import PPO_Multi_Agent_Centralized
+from OpenEndedLanguage.Environments.Multi_Pong.multi_pong import PongEnv
+from OpenEndedLanguage.Reinforcement_Learning.Centralized_PPO.multi_ppo import PPO_Multi_Agent_Centralized
 
 def make_env(seed, vocab_size, sequence_length, max_episode_steps):
     env = PongEnv(width=20, height=20, vocab_size=vocab_size, sequence_length=sequence_length, max_episode_steps=max_episode_steps)
