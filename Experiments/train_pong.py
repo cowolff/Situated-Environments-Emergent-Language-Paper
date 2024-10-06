@@ -1,5 +1,5 @@
-from Continuous_Language.Environments.Multi_Pong.multi_pong import PongEnv
-from Continuous_Language.Reinforcement_Learning.Centralized_PPO.multi_ppo import PPO_Multi_Agent_Centralized
+from OpenEndedLanguage.Environments.Multi_Pong.multi_pong import PongEnv
+from OpenEndedLanguage.Reinforcement_Learning.Centralized_PPO.multi_ppo import PPO_Multi_Agent_Centralized
 
 def make_env(seed, vocab_size, sequence_length, max_episode_steps):
     env = PongEnv(width=20, height=20, vocab_size=vocab_size, sequence_length=sequence_length, max_episode_steps=max_episode_steps)

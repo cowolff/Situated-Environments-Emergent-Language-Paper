@@ -1,5 +1,5 @@
-from Continuous_Language.Environments.Collectors.collectors import Collectors
-from Continuous_Language.Reinforcement_Learning.Centralized_PPO.multi_ppo import PPO_Multi_Agent_Centralized
+from OpenEndedLanguage.Environments.Collectors.collectors import Collectors
+from OpenEndedLanguage.Reinforcement_Learning.Centralized_PPO.multi_ppo import PPO_Multi_Agent_Centralized
 
 def make_env(sequence_length=0):
     vocab_size = 4
