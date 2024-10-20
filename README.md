@@ -2,7 +2,7 @@
 
 <br />
 <div align="center">
-  <h2 align="center">Language Emergence in Open-Ended Environments</h2>
+  <h2 align="center">Bidirectional Emergent Language in Situated Environments</h2>
 </div>
 
 <br/>
